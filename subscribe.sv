@@ -63,16 +63,6 @@ endfunction
 
 endfunction
 
-n new(string name="f_subscriber",uvm_component parent);
-
-  super.new(name,parent);
-
-  item_got_export2= new("item_got_export2", this);
-
-  tr=fifo_seq_item::type_id::create("tr");
- cg=new();
-
-endfunction
 
 
 
